@@ -1,6 +1,6 @@
 {
-  "name": "telluria-utils",
-  "version": "1.0.0",
+  "name": "@npm-telluria-tecnologia/telluria-utils",
+  "version": "1.0.1",
   "description": "important and useful functions for application development",
   "main": "lib",
   "types": "lib",

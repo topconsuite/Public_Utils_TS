@@ -21,5 +21,5 @@ yarn add telluria-utils
 TS
 
 ```ts
-import { isPrimeNumber } from 'telluria-utils';
+import matchesSubstringIgnoreCaseAndAccents from 'telluria-utils';
 ```
