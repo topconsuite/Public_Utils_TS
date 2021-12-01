@@ -1,7 +1,16 @@
 {
   "name": "@npm-telluria-tecnologia/telluria-utils",
-  "version": "1.0.2",
-  "description": "important and useful functions for application development",
+  "description": "Important and useful functions for application development",
+  "version": "1.1.2",
+  "license": "MIT",
+  "author": "Telluria Tecnologia",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/t3105/telluria-utils.git"
+  },
+  "keywords": [
+    "utils", "telluria", "JS", "TS"
+  ],
   "main": "lib",
   "types": "lib",
   "scripts": {
@@ -15,9 +24,6 @@
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "^13.2.1",
     "@commitlint/config-conventional": "^13.2.0",
