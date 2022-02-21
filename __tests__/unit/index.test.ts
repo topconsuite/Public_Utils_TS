@@ -1,23 +1,23 @@
-import matchesSubstringIgnoreCaseAndAccents from '../../src/index';
+import { matchesSubstringIgnoreCaseAndAccents } from "../../src/index";
 
 /**
  * Tests example
  */
 
-describe('function matchesSubstringIgnoreCaseAndAccents', () => {
-  test('should find a matching substring', () => {
+describe("function matchesSubstringIgnoreCaseAndAccents", () => {
+  test("should find a matching substring", () => {
     const matchingSubstring = matchesSubstringIgnoreCaseAndAccents(
-      'Telluria',
-      'tell',
+      "Telluria",
+      "tell",
     );
 
     expect(matchingSubstring).toBeTruthy();
   });
 
-  test('should not find a matching substring', () => {
+  test("should not find a matching substring", () => {
     const matchingSubstring = matchesSubstringIgnoreCaseAndAccents(
-      'Telluria',
-      'topsys',
+      "Telluria",
+      "topsys",
     );
 
     expect(matchingSubstring).toBeFalsy();
