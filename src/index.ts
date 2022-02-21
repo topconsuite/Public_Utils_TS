@@ -11,13 +11,13 @@ function matchesSubstringIgnoreCaseAndAccents(
 ): boolean {
   return text
     .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
     .includes(
       searchString
         .toLowerCase()
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, ''),
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, ""),
     );
 }
 
@@ -36,4 +36,13 @@ function isMobile() {
   return toMatch.some((toMatchItem) => navigator.userAgent.match(toMatchItem));
 }
 
-export { matchesSubstringIgnoreCaseAndAccents, isMobile };
+const supplyGroupColors = {
+  additions: "#FF9F0A",
+  additive: "#30B0C7",
+  binder: "#595959",
+  coarseAggregate: "#7B7B7B",
+  fineAggregate: "#989898",
+  water: "#3D9AFF",
+};
+
+export { matchesSubstringIgnoreCaseAndAccents, isMobile, supplyGroupColors };
